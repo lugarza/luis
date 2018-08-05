@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
+/*$fa-font-path: "../../node_modules/font-awesome/fonts";*/
+/*@import "../../node_modules/font-awesome/scss/font-awesome";*/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2em;
+  margin: 0;
+  background-color: #fefefe;
+  color: #494b50; }
+
+svg {
+  fill: currentColor; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+p {
+  margin-bottom: 2em; }
+
+em {
+  color: #222; }
+
+ul {
+  margin: 1em 0; }
+
+li {
+  list-style-type: none; }
+  li:before {
+    content: '-'; }
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700; }
+
+h2 {
+  color: #222;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+strong {
+  font-weight: 700; }
+
+a,
+a:active,
+a:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #222; }
+
+.inactive {
+  cursor: not-allowed; }
+
+a:hover {
+  text-decoration: underline;
+  color: #555; }
+
+.logo {
+  height: 3em;
+  margin: 2em 0 1em;
+  color: #222; }
+  .logo:hover {
+    color: #555; }
+
+header {
+  border-bottom: 1px solid #222; }
+  header .header-content {
+    display: flex;
+    max-width: 60em;
+    margin: 0 auto; }
+    header .header-content::after {
+      clear: both;
+      content: "";
+      display: block; }
+  header .header--left {
+    width: calc(25% - 25px);
+    float: left;
+    margin-left: 20px; }
+  header .header--right {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px;
+    align-items: center;
+    text-align: right; }
+
+.nav {
+  display: flex;
+  justify-content: flex-end; }
+  .nav a {
+    padding: 0 2em; }
+    .nav a:last-child {
+      padding-right: 0; }
+
+.main {
+  max-width: 60em;
+  margin: 2em auto 5em; }
+  .main::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .main--left {
+    width: calc(25% - 25px);
+    float: left;
+    margin-left: 20px; }
+  .main--right {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px; }
+
+.sample-link {
+  color: #a1a1a1;
+  float: right;
+  font-weight: 300; }

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+
+/*$fa-font-path: "../../node_modules/font-awesome/fonts";*/
+/*@import "../../node_modules/font-awesome/scss/font-awesome";*/
+
+@import "bourbon";
+@import "neat";
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2em;
+    margin: 0;
+    background-color: #fefefe;
+    color: #494b50;
+}
+
+svg {
+    fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+em {
+    color: #222;
+}
+
+ul {
+    margin: 1em 0;
+}
+
+li {
+    list-style-type: none;
+    &:before {
+        content: '-';
+    }
+}
+
+h1 {
+	margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    color: #222;
+    font-size: 1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a,
+a:active,
+a:visited {
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.inactive {
+    cursor: not-allowed;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+.logo {
+    height: 3em;
+    margin: 2em 0 1em;
+    color: #222;
+    &:hover {
+    	color: #555;
+    }
+}
+
+header {
+    border-bottom: 1px solid #222;
+    .header-content {
+        @include grid-container;
+        display: flex;
+        max-width: 60em;
+        margin: 0 auto;
+    }
+    .header--left {
+        @include grid-column(3);
+    }
+    .header--right {
+        @include grid-column(9);
+        align-items: center;
+        text-align: right;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        padding: 0 2em;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.main {
+    @include grid-container();
+    max-width: 60em;
+    margin: 2em auto 5em;
+    &--left {
+        @include grid-column(3);
+    }
+    &--right {
+        @include grid-column(9);
+    }
+}
+
+.sample-link {
+	color: #a1a1a1;
+	float: right;
+	font-weight: 300;
+}
+
+.content {}

@@ -1,0 +1,23 @@
+{
+  "name": "luisgarza.me",
+  "version": "1.0.0",
+  "description": "Portfolio of Luis Garza",
+  "main": "index.html",
+  "dependencies": {
+    "bourbon": "^5.0.0",
+    "modern-normalize": "^0.4.0",
+    "re-base": "^3.2.2"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.15.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass public/scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Luis Garza",
+  "license": "ISC"
+}
